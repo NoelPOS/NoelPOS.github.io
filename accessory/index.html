@@ -53,9 +53,10 @@
 
         accessoryCell.innerHTML = accessory
         amountCell.innerHTML = amount
-        priceCell.innerHTML = '$' + price
+        let total = price * amount
+        priceCell.innerHTML = '$' + total
 
-        updateTotalPrice(price)
+        updateTotalPrice(total)
       }
 
       function calculatePrice(accessory) {
